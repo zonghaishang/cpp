@@ -38,7 +38,7 @@ int main(int args, char** argv){
 
     cout << "nico's family exists" << endl;
     cout << "- nico is shared " << p.use_count() << " times " << endl;
-    cout <<  "- name of 1st kid of nico's mom: " << p->mother->kids[0]->name << endl;
+    cout <<  "- name of 1st kid of nico's mom: " << p->mother->kids[0].lock()->name << endl;
 
     p = initFamily("jim");
 
