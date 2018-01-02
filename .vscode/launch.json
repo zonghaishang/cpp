@@ -8,14 +8,15 @@
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/a.out",
+            "program": "${workspaceFolder}/Person",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,
-            "MIMode": "lldb"
-            //"preLaunchTask": "clang++"
+            "MIMode": "lldb",
+            "preLaunchTask": "Build Person cpp",
+            // "internalConsoleOptions": "neverOpen"
         }
     ]
 }

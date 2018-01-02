@@ -6,12 +6,13 @@
         {
             "label": "Build Person cpp",
             "type": "shell",
-            "command": "clang++",
+            "command": "g++ -o Person",
             "args": ["-std=c++11", "-g", "Person.cpp"],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher":"$gcc"
         }
     ]
 }
